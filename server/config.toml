@@ -1,0 +1,100 @@
+# Файл конфигурации системы
+
+engine = "Phenol"
+version = "2.0.0"
+
+# Настройки сервера
+[Server]
+Domain		= "phenol2.com"
+
+# Настройки кэширования в сек
+[Cache]
+Folder		= "cache"
+Long		= "3600"
+Default		= "300"
+Quick		= "15"
+
+# Типы файлов разрешенных на вывод в браузер
+[Files.Accepted]
+
+txt			= "text/plain"
+html		= "text/html"
+html		= "text/html"
+css			= "text/css"
+
+bmp			= "image/bmp"
+jpeg		= "image/jpeg"
+jpg			= "image/jpg"
+png			= "image/png"
+gif			= "image/gif"
+ico			= "image/x-icon"
+
+svg			= "image/svg+xml"
+djvu		= "image/vnd.djvu"
+cgm			= "image/cgm"
+
+js			= "application/javascript"
+json		= "application/json"
+
+pdf			= "application/x-pdf"
+
+zip			= "application/zip"
+rar			= "application/x-rar-compressedz"
+7z			= "application/x-7z-compressed"
+
+xml			= "application/xml"
+rss			= "application/rss+xml"
+atom		= "application/atom+xml"
+xhtml		= "application/xhtml+xml"
+
+swf			= "application/x-shockwave-flash"
+air			= "application/vnd.adobe.air-application-installer-package+zip"
+
+ogg			= "audio/x-ogg"
+# webm		= "audio/webm"
+mka			= "audio/x-matroska"
+mp3			= "audio/mpeg"
+wav			= "audio/vnd.wave"
+
+mkv			= "video/x-matroska"
+webm		= "video/webm"
+flv			= "video/x-flv"
+bik			= "video/x-bink"
+mp4			= "video/mp4"
+
+
+# Запрещенные типы файлов
+[Files.Forbidden]
+
+cache		= "text/plain"
+
+php			= "application/x-httpd-php"
+inc			= "application/x-httpd-php"
+tpl			= "application/x-httpd-php"
+exe			= "application/x-msdownload"
+apk			= "application/vnd.android.package-archive"
+
+torrent		= "application/x-bittorrent"
+res			= "application/valve-resource-format"
+
+jar			= "application/java-archive"
+class		= "application/java-vm"
+
+sis			= "application/vnd.symbian.install"
+rtf			= "application/rtf"
+
+thm			= "application/vnd.eri.thm"
+nth			= "application/vnd.nok-s40theme"
+mpn			= "application/vnd.mophun.application"
+
+sisx		= "x-epoc/x-sisx-app"
+jad			= "text/vnd.sun.j2me.app-descriptor"
+ini			= "text/ini"
+toml		= "text/toml"
+
+
+# Mime-тип не опознанного но разрешенного файла
+[Files.Default]
+default		= "application/octet-stream"
+
+
